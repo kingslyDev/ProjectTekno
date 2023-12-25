@@ -1,0 +1,115 @@
+.kartu-paket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 70%);
+  background-color: #f8f9fa;
+  margin: 0 10px 20px 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.paket-name {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #343a40;
+  text-align: center;
+}
+
+.paket-description {
+  font-size: 1.5rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.paket-features {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feature-text {
+  font-size: 1.2rem;
+  margin-right: 8px;
+  color: #343a40;
+}
+
+.feature-check {
+  font-size: 1.5rem;
+  color: #218838;
+  margin-left: 1rem;
+}
+
+.paket-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #343a40;
+  text-align: center;
+}
+
+.order-now-button {
+  font-size: 16px;
+  background-color: #27ae60;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  width: 400px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  margin: auto;
+  margin-top: auto;
+  text-decoration: none;
+  display: block;
+}
+
+.order-now-button:hover {
+  background-color: #000000;
+}
+
+@media only screen and (max-width: 767px) {
+  h2.paket-title {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .kartu-paket {
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin: 0 5px 10px 5px;
+  }
+
+  .paket-name {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .paket-description {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .feature-text {
+    font-size: 1rem;
+  }
+
+  .paket-price {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+
+  .order-now-button {
+    padding: 14px;
+    max-width: 300px;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 14px;
+  }
+}

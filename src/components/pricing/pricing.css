@@ -1,0 +1,118 @@
+/* Container umum untuk pricing */
+.pricing__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+/* Kartu pricing */
+.pricing__item {
+  padding: 1.875rem 2.5rem;
+  background-color: var(--container-color);
+  text-align: center;
+  border: var(--border-radius);
+  box-shadow: var(--shadow);
+  position: relative;
+  transition: transform 0.3s;
+}
+
+/* Hover pada Kartu pricing */
+.pricing__item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul plan */
+.pricing__plan {
+  margin: 1.25rem 0;
+  font-size: var(--h2-font-size);
+}
+
+/* Title dan support */
+.pricing__title,
+.pricing__support {
+  margin-top: 2.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Harga */
+.price {
+  font: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  margin-top: 4rem;
+}
+
+.price em {
+  font-size: var(--small-font-size);
+  margin-right: 0.5rem;
+  vertical-align: super;
+}
+
+.price span {
+  font-size: var(--normal-font-size);
+  font-weight: 400;
+  margin: 0.75;
+}
+
+/* Tombol */
+.pricing__item .button {
+  margin-top: 1.25rem;
+  background-color: hsl(210, 100%, 12%);
+  color: #fff;
+  padding: 0.75rem 2rem;
+  line-height: 1;
+  border-radius: 1.875rem;
+  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+  border: 1px solid transparent;
+  display: inline-block;
+}
+
+/* Tombol hover */
+.pricing__item .button:hover {
+  background-color: #45a049;
+}
+
+/* Badge (terbaik) */
+.pricing__item.best {
+  padding: 3.4rem 2.5rem;
+}
+
+.badge {
+  position: absolute;
+  left: 0;
+  top: 2.6rem;
+  color: #ffff;
+  background-color: red;
+  transform: rotate(-90deg);
+  padding: 0.25rem 0.75rem;
+  font-size: var(--normal-font-size);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Fitur pricing */
+.pricing__features {
+  margin-top: 4rem;
+}
+
+/* Aturan desain responsif untuk handphone */
+@media only screen and (max-width: 767px) {
+  .pricing__container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .pricing__item {
+    flex: 0 0 calc(100vw - 20px);
+    margin-right: 10px;
+  }
+}
+
+/* Aturan desain responsif untuk tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .pricing__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

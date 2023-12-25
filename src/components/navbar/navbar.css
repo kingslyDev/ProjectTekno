@@ -1,0 +1,120 @@
+/* navbar.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(26, 26, 26, 70%);
+  z-index: 1000;
+  transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+  transform: translateY(0);
+}
+
+.navbar.transparent {
+  background-color: rgba(26, 26, 26, 100%);
+}
+
+.navbar__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__item {
+  position: relative;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-right: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar__link:hover {
+  color: #ffd700;
+  transform: scale(1.1);
+}
+
+.navbar__logo {
+  margin-right: 1rem;
+}
+
+.navbar__logo-img {
+  width: 100px;
+  height: auto;
+}
+
+.navbar__item.active .navbar__link,
+.navbar__item:hover .navbar__link {
+  color: #ffd700; /* Sesuaikan warna sesuai kebutuhan */
+  border-bottom: 2px solid #ffd700; /* Tambahkan garis bawah untuk tautan aktif dan tautan yang dihover */
+}
+
+.navbar__link.active {
+  color: #ffd700; /* Change the color for the active link */
+  text-decoration: underline 2px solid;
+}
+
+.navbar__submenu a {
+  display: block;
+  color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.navbar__submenu a:hover {
+  background-color: #ffd700;
+}
+
+.navbar__submenu {
+  display: none;
+  position: absolute;
+  background-color: #1a1a1a;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 4ms ease ease-in-out;
+  width: 190px; /* Sesuaikan dengan lebar yang diinginkan */
+  height: 203px;
+  border-radius: 14px;
+}
+
+.navbar__item.navbar__dropdown:hover .navbar__submenu {
+  display: block;
+  top: 100%;
+  left: 0;
+  opacity: 1; /* Set opasitas menjadi 1 saat dihover */
+}
+
+.navbar.transparent {
+  background-color: rgba(26, 26, 26, 100%);
+}
+
+.navbar__link--transparent {
+  color: #ffffff; /* Warna teks pada tautan saat transparan */
+}
+@media (min-width: 1920px) {
+  .navbar {
+    font-size: 120%; /* Menskalakan teks menjadi 150% */
+  }
+
+  .navbar__link {
+    font-size: 1.2rem; /* Menskalakan ukuran font tautan menjadi 150% */
+  }
+
+  .navbar__logo-img {
+    width: 150px; /* Menskalakan lebar logo menjadi 150% */
+  }
+
+  /* Tambahan gaya lain sesuai kebutuhan pada layar besar */
+}

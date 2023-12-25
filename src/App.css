@@ -1,0 +1,34 @@
+.sidebar {
+  width: 110px; /* Sesuaikan dengan lebar Sidebar Anda */
+  min-height: 100vh;
+  background: rgba(255, 255, 255, 0.8);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+  transition: left 0.3s ease;
+}
+
+/* Sidebar untuk mode responsif */
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    display: none; /* Sembunyikan Sidebar pada mode responsif */
+  }
+}
+
+/* .main dan .navbar styling */
+
+.main {
+  margin-left: 110px; /* Sesuaikan dengan lebar Sidebar Anda */
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    margin-left: 0;
+  }
+  .navbar {
+    display: none;
+  }
+}

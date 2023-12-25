@@ -1,0 +1,195 @@
+/* contact.css */
+
+/* ... Gaya CSS Anda yang sudah ada ... */
+
+h1.contact_title {
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+.contact_us {
+  background-color: #f1f1f1;
+  padding: 24px 0;
+  border-radius: 10px;
+  max-width: 800px; /* Menyesuaikan lebar maksimum untuk konten yang lebih besar */
+  margin: auto; /* Tengahkan konten */
+  overflow: hidden; /* Agar elemen children tidak keluar dari kontennya */
+  display: flex; /* Menggunakan flexbox untuk menyusun elemen children */
+}
+
+.contact_inner {
+  background-color: #fff;
+
+  position: relative;
+  box-shadow: 20px 22px 44px #cccc;
+  border-radius: 25px;
+  flex: 1; /* Memastikan flexbox memenuhi ruang yang tersedia */
+}
+
+.contact_form_inner {
+  padding: 36px 12px;
+  flex: 1; /* Memastikan flexbox memenuhi ruang yang tersedia */
+}
+
+.contact_field h3 {
+  color: #000;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.contact_field p {
+  color: #000;
+  font-size: 9.6px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 21px;
+}
+
+.contact_field input,
+.contact_field textarea {
+  width: 100%;
+  padding: 9px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact_field button {
+  background: linear-gradient(to top right, #4dbd90 -5%, #4dbd90 100%);
+  border: none;
+  color: #fff;
+  padding: 9px 12px;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.right_conatct_social_icon {
+  height: 100%;
+}
+
+.socil_item_inner li {
+  list-style: none;
+}
+
+.socil_item_inner li a {
+  color: #fff;
+  margin: 0 15px;
+  font-size: 9.6px;
+}
+
+.contact_info_sec {
+  position: absolute;
+  background-color: #2d2d2d;
+  right: 1px;
+  top: 18%;
+  height: 340px;
+  width: 340px;
+  padding: 40px;
+  border-radius: 25px 0 0 25px;
+  color: #fff;
+  transition: display 0.3s ease;
+}
+
+.contact_info_sec h4 {
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+  font-size: 9.6px;
+}
+
+.info_single {
+  margin: 30px 0px;
+}
+
+.info_single i {
+  margin-right: 15px;
+}
+
+.info_single span {
+  font-size: 9.6px;
+  letter-spacing: 1px;
+}
+
+.map_sec {
+  padding: 20px 0;
+  flex: 1; /* Memastikan flexbox memenuhi ruang yang tersedia */
+  overflow: hidden; /* Agar elemen children tidak keluar dari kontennya */
+  border-radius: 10px; /* Menambahkan border-radius */
+}
+
+.map_inner h4,
+.map_inner p {
+  color: #000;
+  text-align: center;
+  font-size: 9.6px;
+}
+
+.map_inner p {
+  font-size: 9.6px;
+}
+
+.map_bind {
+  margin-top: 20px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.map_inner h4,
+.map_inner p {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.map_bind {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.map_inner {
+  text-align: center; /* Tengahkan teks pada map_inner */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .contact_us {
+    background-color: #f1f1f1;
+    padding: 24px 0;
+    border-radius: 10px;
+    margin-right: 0rem;
+  }
+
+  .contact_inner {
+    flex-direction: column;
+  }
+
+  .contact_field input,
+  .contact_field textarea {
+    width: calc(100% - 12px);
+  }
+
+  .contact_field button {
+    width: calc(100% - 12px);
+  }
+
+  .contact_form_inner {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+
+  .contact_info_sec {
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    border-radius: 0;
+  }
+}

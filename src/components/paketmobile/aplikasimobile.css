@@ -1,0 +1,148 @@
+/* General styling for the pricing container */
+.pricing-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Styling for the section title */
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Styling for slick slider */
+.slick-slider {
+  width: 100%;
+}
+
+/* Styling for pricing item */
+.pricing-item {
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 80%);
+  background-color: #f8f9fa;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Hover effect for pricing item */
+.pricing-item:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for pricing image */
+.pricing-img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling for pricing plan */
+.pricing-plan {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+/* Styling for pricing features list */
+.pricing-features {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+/* Styling for pricing feature text */
+.pricing-features li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* Styling for pricing price */
+.pricing-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #343a40;
+}
+
+/* Styling for pricing button */
+.pricing-button {
+  background-color: hsl(210, 100%, 12%);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 14px;
+  width: 100%;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  margin-top: auto;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Hover effect for pricing button */
+.pricing-button:hover {
+  background-color: #27ae60;
+}
+
+/* Styling for pricing support text */
+.pricing-support {
+  margin-top: 10px;
+}
+
+/* Styling for best pricing item */
+.pricing-item.best {
+  padding: 3rem;
+}
+
+/* Responsive design for mobile devices */
+@media only screen and (max-width: 767px) {
+  /* Adjustments for pricing item padding on mobile */
+  h2.section-title {
+    margin-bottom: 5rem;
+    font-size: 23px;
+  }
+
+  .pricing-item {
+    padding: 1.5rem;
+    margin: 0 5px 10px 5px;
+  }
+
+  /* Increase font size for pricing plan on mobile */
+  .pricing-plan {
+    font-size: 1.8rem;
+  }
+
+  /* Increase font size for pricing features on mobile */
+  .pricing-features {
+    font-size: 16px;
+  }
+
+  /* Increase font size for pricing feature text on mobile */
+  .pricing-features li {
+    font-size: 16px;
+  }
+
+  /* Increase font size for pricing price on mobile */
+  .pricing-price {
+    font-size: 1.7rem;
+  }
+
+  /* Adjust pricing button padding on mobile */
+  .pricing-button {
+    padding: 14px;
+  }
+
+  /* Adjust pricing support text margin on mobile */
+  .pricing-support {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,54 @@
+@media only screen and (max-width: 767px) {
+  .swiper-container {
+    display: flex;
+  }
+
+  /* Swiper wrapper */
+  .swiper-wrapper {
+    display: flex;
+    /* Jika ingin item swiper sejajar secara horizontal, Anda bisa menambahkan flex-wrap */
+    flex-wrap: nowrap; /* atau wrap jika ingin membalut ke baris baru */
+  }
+
+  /* Navigation tombol Swiper */
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    height: auto;
+    margin-top: -20px;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Pagination Swiper */
+  .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}

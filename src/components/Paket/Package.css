@@ -1,0 +1,180 @@
+/* Default styling for larger screens */
+.paket-website {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.kartu-paket-website {
+  flex: 0 0 calc(33.33% - 20px);
+  padding: 1.875rem 2.5rem;
+  position: relative;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.kartu-paket-website:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+
+.icon {
+  margin-right: 5px;
+  color: #27ae60;
+}
+
+.paket-website .harga {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+.kartu-paket-website .pesan-sekarang-button {
+  background-color: #27ae60;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  margin-top: auto;
+}
+
+.kartu-paket-website .pesan-sekarang-button:hover {
+  background-color: #219d54;
+}
+
+.section__title {
+  margin-top: 5rem;
+  color: #333;
+  text-align: center;
+}
+
+.kartu-paket-website:nth-child(odd) {
+  border: 2px solid #51b90b;
+}
+
+.kartu-paket-website:nth-child(2n) {
+  border: 2px solid #ffbb00;
+}
+
+.kartu-paket-website:nth-child(even) {
+  border: 2px solid #ff0000;
+}
+
+.icon-check {
+  color: #1b08ca;
+  margin-left: 1rem;
+}
+
+/* Sidebar styling for larger screens */
+.sidebar {
+  position: fixed;
+  bottom: 0; /* Position the sidebar at the bottom */
+  right: 0;
+  transform: translateY(50%); /* Adjust translateY to center it vertically */
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.808);
+  border-radius: 10px;
+  width: 10px;
+  height: 50%; /* Set the height to take up half of the screen */
+  overflow: hidden;
+  transition: width 0.3s, height 0.3s; /* Add height transition */
+}
+
+/* Sidebar hover effect for larger screens */
+.sidebar:hover {
+  width: 200px;
+  height: 50%; /* Match the height for a consistent appearance */
+  overflow: visible;
+}
+
+/* Sidebar dot styling for larger screens */
+.sidebar:not(:hover)::before {
+  content: '\2022';
+  font-size: 4px;
+  color: #555;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* Sidebar list styling for larger screens */
+.sidebar:not(:hover) ul {
+  display: none;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+  margin-top: 2.55rem;
+}
+
+.sidebar a:hover {
+  color: #4caf50;
+}
+
+/* Media query for mobile and tablet devices */
+@media (max-width: 768px) {
+  /* Hide the sidebar on smaller screens */
+  .sidebar {
+    display: none;
+  }
+
+  /* Adjust margin-top for the section title */
+  .section__title {
+    margin-top: 2rem;
+  }
+
+  /* Center the package cards on smaller screens */
+  .paket-website {
+    margin-top: 1rem;
+    justify-content: center; /* Add this property to center the cards */
+  }
+
+  /* Adjust the width of the package card on smaller screens */
+  .kartu-paket-website {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
